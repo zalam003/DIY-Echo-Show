@@ -22,7 +22,7 @@ cd ${GIT_DIR}/Alexa/
 # Setup APL Core Library
 if [ ! -d apl-core-library ]
 then
-  git clone --single-branch --branch v1.2 git://github.com/alexa/apl-core-library.git
+  git clone --single-branch git://github.com/alexa/apl-core-library.git
 fi
 cd $GIT_DIR/Alexa/apl-core-library
 if [ ! -d build ]
@@ -52,7 +52,8 @@ sudo ./cmake-device.sh
 
 if [ ! -d alexa-smart-screen-sdk ]
 then
-  git clone git://github.com/shivasiddharth/alexa-smart-screen-sdk.git
+  #git clone git://github.com/shivasiddharth/alexa-smart-screen-sdk.git
+  git clone git://github.com/alexa/alexa-smart-screen-sdk.git
 fi
 
 sudo ./cmake-screen.sh
