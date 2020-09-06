@@ -1,11 +1,7 @@
 # DIY-Echo-Show
 ## Make your own Amazon Echo Show     
 
-*******************************************************************************************************************************
-### **If you like the work, find it useful and if you would like to get me a :coffee: :smile:**  
-
-****************************************************************   
-### How to Video    
+### How-to Video    
 ****************************************************************    
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=OLc5EpjWpuw
 " target="_blank"><img src="http://img.youtube.com/vi/OLc5EpjWpuw/0.jpg"
