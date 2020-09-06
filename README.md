@@ -26,7 +26,7 @@ https://github.com/alexa/avs-device-sdk/wiki/Create-Security-Profile
 ***************************************************************
 1. Clone the git using:
 ```
-git clone https://github.com/shivasiddharth/DIY-Echo-Show  
+git clone https://github.com/zalam003/DIY-Echo-Show.git  
 ```
 2. Make the installers executable using:
 ```
