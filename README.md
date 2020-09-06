@@ -2,7 +2,7 @@
 ## Make your own Amazon Echo Show     
 
 *******************************************************************************************************************************
-### **If you like the work, find it useful and if you would like to get me a :coffee: :smile:** [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7GH3YDCHZ36QN)  
+### **If you like the work, find it useful and if you would like to get me a :coffee: :smile:**  
 
 ****************************************************************   
 ### How to Video    
