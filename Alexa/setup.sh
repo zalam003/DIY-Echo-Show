@@ -74,7 +74,7 @@ build_port_audio() {
 
   pushd portaudio
   ./configure --without-jack
-  make
+  make -j4
   popd
   popd
 }
@@ -265,11 +265,11 @@ then
 
 
   cd $BUILD_PATH
-  make SampleApp -j2
+  make SampleApp -j4
 
 else
   cd $BUILD_PATH
-  make SampleApp -j2
+  make SampleApp -j4
 fi
 
 
