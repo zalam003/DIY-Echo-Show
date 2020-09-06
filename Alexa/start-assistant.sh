@@ -14,5 +14,5 @@ processes=($(_psName2Ids "alexa-screen.py"))
 if [ ${#processes[@]} -le 1 ]; then
     cd "$ALEXA_FOLDER"
     psKill "alexa-screen.py"
-    sudo screen -dm sudo python3 /home/pi/DIY-Echo-Show/Alexa/alexa-screen.py
+    sudo screen -dmS ss sudo python3 /home/pi/DIY-Echo-Show/Alexa/alexa-screen.py
 fi;
