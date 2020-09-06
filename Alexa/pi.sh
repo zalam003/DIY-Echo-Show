@@ -68,6 +68,6 @@ generate_test_script() {
   mkdir -p "$UNIT_TEST_MODEL_PATH"
   cp "$UNIT_TEST_MODEL" "$UNIT_TEST_MODEL_PATH"
   cd $BUILD_PATH
-  make all test -j2
+  make all test -j4
 EOF
 }
