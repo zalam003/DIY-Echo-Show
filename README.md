@@ -76,19 +76,27 @@ sudo /home/pi/DIY-Echo-Show/scripts/alexa-voice-installer.sh
 sudo /home/pi/DIY-Echo-Show/Alexa/startsample.sh  
 ```
 
-9. Install the Alexa screen now using the following:   
+9. Download alexa-screen 
+
+10. Apply following:
+
+```
+https://github.com/alexa/alexa-smart-screen-sdk/issues/41#issuecomment-687335928
+```
+
+11. Install the Alexa screen now using the following:   
 ```
 
 sudo /home/pi/DIY-Echo-Show/scripts/alexa-screen-installer.sh  
 ```  
 
-10. Try starting the assistant using the following for authentication:   
+12. Try starting the assistant using the following for authentication:   
 ```
 sudo chmod +x /home/pi/DIY-Echo-Show/Alexa/startsampleassistant.sh
 sudo /home/pi/DIY-Echo-Show/Alexa/startsampleassistant.sh  
 ```  
 
-11. After authentication start the assistant and smart screen using:   
+13. After authentication start the assistant and smart screen using:   
 ```
 sudo chmod +x /home/pi/DIY-Echo-Show/Alexa/start-assistant.sh  
 sudo chmod +x /home/pi/DIY-Echo-Show/Alexa/start-screen.sh  
@@ -96,7 +104,7 @@ sudo /home/pi/DIY-Echo-Show/Alexa/start-assistant.sh
 sudo /home/pi/DIY-Echo-Show/Alexa/start-screen.sh  
 ```  
 
-12. For voice activation/wakeword, use:   
+14. For voice activation/wakeword, use:   
 ```
 python3 /home/pi/DIY-Echo-Show/snowboy/voiceactivation.py
 ```  
