@@ -20,7 +20,6 @@ cd ${GIT_DIR}/Alexa/
 sudo chmod +x ./setup.sh
 sudo chmod +x ./pi.sh
 sudo chmod +x ./genConfig.sh
-sudo cp /home/pi/config.json .
 sudo ./setup.sh ./config.json
 sudo chmod +x ./test.sh
 sudo chmod +x ./startsample.sh
