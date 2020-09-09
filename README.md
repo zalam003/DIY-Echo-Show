@@ -11,8 +11,10 @@ alt="Detailed Youtube Video" width="240" height="180" border="10" /></a>
 ### Before Starting the setup   
 ****************************************************************  
 
-1. Create a security profile for alexa-avs-sample-app if you already don't have one.  
+1. Create a security profile for alexa-avs-sample-app if you already don't have one.
+```
 https://github.com/alexa/avs-device-sdk/wiki/Create-Security-Profile  
+```
 
 2. Download the **"config.json"** file and place it in the **/home/pi/DIY-Echo-Show/Alexa** directory.  
 
@@ -22,7 +24,9 @@ https://github.com/alexa/avs-device-sdk/wiki/Create-Security-Profile
 ****************************************************************
 
 1. Download the following Rasberry Pi Image:
+```
 https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2020-05-28/2020-05-27-raspios-buster-full-armhf.zip
+```
 
 2. Image SD card and boot Rasberry Pi
 
@@ -53,50 +57,45 @@ sudo reboot
 5. Make sure that contents of asoundrc match the contents of asound.conf    
    Open a terminal and type:  
 ```
-sudo nano /etc/asound.conf
+diff ~/.asoundrc /etc/asound.conf
 ```
-Open a second terminal and type:    
-```
-sudo nano ~/.asoundrc
-```
+
 If the contents of .asoundrc are not same as asound.conf, make them both same.  
 
-6. Bonus Script - Test the audio setup using the following code (optional). **Dont panic if the test does not go through successfully, proceed with the installation**:  
+6. Bonus Script - Test the audio setup using the following code (optional). 
+**Dont panic if the test does not go through successfully, proceed with the installation**:  
 ```
 sudo /home/pi/DIY-Echo-Show/scripts/audio-test.sh  
 ```
 
-7. Install the Alexa voice first using the following. This is an interactive script, so just follow the onscreen instructions:
+7. Restart the Pi using:
+```
+sudo reboot
+```
+
+8. Install the Alexa voice first using the following. This is an interactive script, so just follow the onscreen instructions:
 ```
 sudo /home/pi/DIY-Echo-Show/scripts/alexa-voice-installer.sh  
 ```  
 
-8. Authorize Alexa    
+9. Authorize Alexa    
 ```
 sudo /home/pi/DIY-Echo-Show/Alexa/startsample.sh  
 ```
 
-9. Download alexa-screen 
-
-10. Apply following:
-
-```
-https://github.com/alexa/alexa-smart-screen-sdk/issues/41#issuecomment-687335928
-```
-
-11. Install the Alexa screen now using the following:   
+9. Install the Alexa screen now using the following:   
 ```
 
 sudo /home/pi/DIY-Echo-Show/scripts/alexa-screen-installer.sh  
 ```  
 
-12. Try starting the assistant using the following for authentication:   
+10. Try starting the assistant using the following for authentication:   
 ```
 sudo chmod +x /home/pi/DIY-Echo-Show/Alexa/startsampleassistant.sh
 sudo /home/pi/DIY-Echo-Show/Alexa/startsampleassistant.sh  
 ```  
 
-13. After authentication start the assistant and smart screen using:   
+11. After authentication start the assistant and smart screen using:   
 ```
 sudo chmod +x /home/pi/DIY-Echo-Show/Alexa/start-assistant.sh  
 sudo chmod +x /home/pi/DIY-Echo-Show/Alexa/start-screen.sh  
@@ -104,7 +103,7 @@ sudo /home/pi/DIY-Echo-Show/Alexa/start-assistant.sh
 sudo /home/pi/DIY-Echo-Show/Alexa/start-screen.sh  
 ```  
 
-14. For voice activation/wakeword, use:   
+12. For voice activation/wakeword, use:   
 ```
 python3 /home/pi/DIY-Echo-Show/snowboy/voiceactivation.py
 ```  
