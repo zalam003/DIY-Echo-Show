@@ -70,6 +70,12 @@ sudo pip3 install numpy
 pip3 install numpy
 pip3 install pyaudio
 sudo pip3 install pyaudio
+
+if [ -f /home/pi/Downloads/config.json ]
+then
+    sudo cp /home/pi/Downloads/config.json /home/pi/DIY-Echo-Show/Alexa/.
+fi
+
 echo ""
 echo ""
 echo "Select your audio and mic configuration: "
@@ -79,36 +85,36 @@ echo "You have chosen to use $audio audio configuration"
 echo ""
 case $audio in
     AIY-HAT)
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/configure-driver.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/configure-driver.sh
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/configure-driver.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/configure-driver.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
         ;;
     CUSTOM-VOICE-HAT)
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/custom-voice-hat.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/custom-voice-hat.sh
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/install-i2s.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/install-i2s.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/custom-voice-hat.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/custom-voice-hat.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/install-i2s.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/CUSTOM-VOICE-HAT/scripts/install-i2s.sh
         ;;
     USB-MIC-ON-BOARD-JACK)
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/USB-MIC-JACK/scripts/usb-mic-onboard-jack.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/USB-MIC-JACK/scripts/usb-mic-onboard-jack.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/USB-MIC-JACK/scripts/usb-mic-onboard-jack.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/USB-MIC-JACK/scripts/usb-mic-onboard-jack.sh
         sudo amixer cset numid=3 1
         echo "Audio set to be forced through 3.5mm jack."
         ;;
     USB-MIC-HDMI)
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/configure.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/configure.sh
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/install-usb-mic-hdmi.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/install-usb-mic-hdmi.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/configure.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/configure.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/install-usb-mic-hdmi.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/USB-MIC-HDMI/scripts/install-usb-mic-hdmi.sh
         echo "Audio set to be forced through HDMI."
         ;;
     USB-SOUND-CARD-or-DAC)
-        sudo chmod +x /home/${USER}/DIY-Echo-Show/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
-        sudo /home/${USER}/DIY-Echo-Show/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
+        sudo chmod +x /home/pi/DIY-Echo-Show/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
+        sudo /home/pi/DIY-Echo-Show/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
 	      ;;
     RESPEAKER-HAT)
-        cd /home/${USER}/
+        cd /home/pi/
         git clone https://github.com/shivasiddharth/seeed-voicecard
         cd ./seeed-voicecard/
         sudo ./install.sh
