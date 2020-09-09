@@ -24,4 +24,6 @@ sudo cmake -DCMAKE_PREFIX_PATH=/home/pi/DIY-Echo-Show/Alexa/sdk-install \
  -DSENSORY_KEY_WORD_DETECTOR_INCLUDE_DIR=/home/pi/DIY-Echo-Show/Alexa/third-party/alexa-rpi/include \
   ../alexa-smart-screen-sdk
 
+sudo cp /home/pi/DIY-Echo-Show/alexa-smart-screen-files/package-lock.json ./modules/GUI/js/.
+
 sudo make
