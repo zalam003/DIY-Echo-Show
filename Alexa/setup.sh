@@ -247,7 +247,7 @@ then
     echo
 
     cd $SOURCE_PATH
-     git clone $CLONE_URL
+     git clone --single-branch --branch v1.20.0 $CLONE_URL
   fi
 
   # make the DEVICE SDK
