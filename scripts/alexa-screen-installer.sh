@@ -22,7 +22,7 @@ cd ${GIT_DIR}/Alexa/
 # Setup APL Core Library
 if [ ! -d apl-core-library ]
 then
-  git clone --single-branch --branch v1.2 git://github.com/alexa/apl-core-library.git
+  git clone --single-branch --branch v1.3.3 git://github.com/alexa/apl-core-library.git
 fi
 cd $GIT_DIR/Alexa/apl-core-library
 if [ ! -d build ]
