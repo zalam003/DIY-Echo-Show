@@ -46,9 +46,9 @@ sudo apt-get install -y nodejs
 sudo cp ${GIT_DIR}/Alexa/build/Integration/AlexaClientSDKConfig.json ${GIT_DIR}/Alexa/Backup-AlexaClientSDKConfig.json
 
 cd ${GIT_DIR}/Alexa/
-sudo chmod +x ./cmake-device.sh
+#sudo chmod +x ./cmake-device.sh
 sudo chmod +x ./cmake-screen.sh
-sudo ./cmake-device.sh
+#sudo ./cmake-device.sh
 
 if [ ! -d alexa-smart-screen-sdk ]
 then
